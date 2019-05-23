@@ -94,6 +94,9 @@ studentAntonietta.multiplyNums = (num1, num2) => num1 * num2;
 const parent = {
   name: 'Susan',
   age: 70,
+  speak: function () {
+    console.log(this.name);
+  },
   child: {
     name: 'George',
     age: 50,
@@ -111,10 +114,6 @@ const parent = {
     }
 
   }, //child
-
-  speak: function () {
-    console.log(this.name);
-  }
 } //parent
 
 // parent.child.grandchild.speak();
